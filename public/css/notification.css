@@ -1,0 +1,64 @@
+/* notification body */
+.notification{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0.3px solid gray;
+    width: 50%;
+    margin-left: 160px;
+    height: fit-content;
+ 
+}
+.notification__header{
+    display: flex;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+}
+.notification__info{
+    margin-left: 35px;
+}
+.notification__info p{
+    font-size: 15px;
+    color: #1c1f22;
+}
+.notification__header:hover{
+    background-color: whitesmoke;
+}
+.sidebar__topAvatar{
+margin: 30px;
+}
+.widgets{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0.3px solid gray;
+    width: 250px;
+    padding-bottom: 10px;
+    height: fit-content;
+    margin-left: 30px;
+    position: flex;
+}
+.news:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.widgets_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.news{
+cursor: pointer;
+padding: 10px;
+display: flexbox;
+
+}
+.feed{
+    margin: 35px 35px 30px 30px;
+    display: flex;
+   
+}

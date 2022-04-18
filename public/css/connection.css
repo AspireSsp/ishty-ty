@@ -1,0 +1,146 @@
+/* *body{
+    margin: 0;
+    background-color: lightgray;
+} */
+.cont-connetion{
+    
+    width: 75%;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid darkgrey; */
+    
+    
+}
+.conne-1{
+    grid-row: 1 /-1;
+    height: auto;
+    width: 40%;
+    margin-right: 15px;
+    position: sticky;
+    top: 5px;
+    border-radius: 5px;
+    border: 1px solid lightslategrey;
+    background-color: #fff;
+}
+.conne-1 h4{
+    margin-left: 10px;
+    margin-top: 20px ;
+}
+.network{
+    margin: 20px;
+}
+.network a{
+    text-decoration: none;
+    width: 100%;
+    color: lightslategray;
+    
+}
+.network span{
+    color: lightslategray;
+    /* margin-left: 30%; */
+    float: right;
+}
+.network .bi{
+    font-size: 20px;
+}
+.network button{
+    margin: 5px;
+    border: 1px solid lightslategray ;
+    border-radius: 8px;
+}
+
+.req{
+    height: 50px;
+    width: 100%;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    padding-top: 9px;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+}
+.req span{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: lightslategray;
+}
+.req button{
+    text-decoration: none;
+    border: none;
+    color: lightslategray;
+    float: right;
+    padding-right: 10px;
+    margin-right: 10px;
+    background: none;
+
+}
+.req button:hover{
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.conne-2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    /* overflow: scroll; */
+    border-radius: 5px;
+    /* border: 1px solid lightslategrey; */
+}
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid lightslategrey;
+    position: sticky;
+    top: 35px;
+    margin-top: 5px;
+    overflow-y: scroll;
+    height: 84vh;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+.card{
+    /* flex-direction: row; */
+    width: 22%;
+    margin: 1%;
+    height: 300px;
+    background-color: mintcream;
+}
+/* .card-deck :hover{
+    box-shadow: 5px 5px 4px #888888;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+} 
+*/
+.card-img{
+    display: flex;
+    height: 150px;
+    /* border-radius: 50%; */
+}
+.card-img img{
+    height: 130px;
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+.card-body button{
+    border-radius: 20px;
+    border-color: rgb(49, 49, 208);
+    color: rgb(49, 49, 208);
+    padding: 4px 57px;
+
+}
+.card-text{
+    height: 50px;
+    font-size: 13px;
+}
+

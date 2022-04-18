@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ishty anaittu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <style>
+        .update_profile {
+            height: 300px;
+            width: 60%;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            margin: 20px auto;
+
+        }
+
+        .uplode_imgicon {
+            margin: 20px;
+            width: 250px;
+            height: 201px;
+            background-image: url("/public/img/placeholderProfileImg.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 5%;
+            border: 1px solid lightgrey;
+
+        }
+
+        .uplode_imgicon img {
+            width: 100%;
+        }
+
+        .imgbtn {
+            margin-top: 65%;
+            margin-left: 70%;
+            /* width: 20%; */
+
+        }
+
+        .imgbtn button {
+            width: 70%;
+            height: 30px;
+            border: none;
+            background-color: rgb(74, 74, 248);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile_info {
+            margin: 20px;
+        }
+
+        .profiledetails button {
+            background-color: rgb(74, 74, 248);
+            padding: 10px 25px;
+            border-radius: 10px;
+            border: 1px solid lightskyblue;
+            margin: 20px;
+            cursor: pointer;
+
+        }
+
+        #pf-popup {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .popup-content {
+            width: 60%;
+            height: 75vh;
+            background-color: #fff;
+            border-radius: 9px;
+
+            /* display: flex;
+            flex-direction: column; */
+            justify-content: center;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .edit-intro {
+            height: 50px;
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            /* flex-direction: row; */
+        }
+
+        .edit-intro h3 {
+            margin-left: 4%;
+            width: 50%;
+        }
+
+        .edit-intro button {
+            float: right;
+            margin-top: 6px;
+            margin-left: 42%;
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            background: none;
+        }
+
+        .pro-img {
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pro-img img {
+            height: 100px;
+            width: 100px;
+            border-radius: 30%;
+        }
+
+        .pro-img input {
+            margin-top: 40px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 8px;
+            margin-bottom: 30px;
+        }
+
+        .info span {
+            width: 100%;
+            margin-left: 20px;
+            font-family: Times, serif;
+        }
+
+        .info input {
+            margin-top: 5px;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            padding: 8px 20px;
+        }
+
+        .save-btn {
+            border-radius: 8px;
+            padding: 8px 15px;
+            margin-bottom: 30px;
+            float: right;
+            margin-right: 5%;
+        }
+    </style>
+    <script>
+        document.getElementById('button').addEventListener('onclick', function () {
+            document.querySelector('.pf-popup').style.display = 'flex';
+        })
+    </script>
+</head>
+
+<body>
+    {{> header}}
+    <div class="update_profile">
+        <div class="uplode_imgicon">
+            <!-- <img src="/public/img/placeholderProfileImg.png" alt=""> -->
+            <div class="imgbtn">
+                <button onclick="document.getElementById('getFile').click()">edit</button>
+                <input type='file' id="getFile" style="display:none">
+            </div>
+        </div>
+        <div class="profile_info">
+            <div class="profiledetails">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> {{ user_fullname}}
+                </h1>
+                <!-- <span class="typing-2" style="color: rgba(66, 145, 255, 0.9);">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                </span> -->
+                <button onclick="getElementById('pf-popup').style.display ='flex' ">Update your profile</button>
+
+                <!-- <button id="button">Update your profile</button> -->
+            </div>
+        </div>
+    </div>
+    <div id="pf-popup">
+        <form action="/UpdateProfile" method="POST">
+            <div class="popup-content">
+                <div class="edit-intro">
+                    <h3>Edit intro</h3>
+                    <button onclick="getElementById('pf-popup').style.display ='none' "><i class="bi bi-x"></i></button>
+                    <!-- <i class="bi bi-x"></i> -->
+                </div>
+                <div class="pro-img">
+                    <img src="/public/img/placeholderProfileImg.png" alt="">
+                    <!-- <button  onclick="document.getElementById('getFile').click()">Add Profile Photo</button>
+                <input type='file' id="getFile" style="display:none"> -->
+                    <input type="file" name="image" placeholder="add image">
+                </div>
+                <div class="info">
+                    <span>your fullname :</span>
+                    <input type="text" name="fullname" placeholder="Enter your fullname">
+                </div>
+                <div class="info">
+                    <span>Head line :</span>
+                    <input type="text" name="Headline" placeholder="Enter Head line">
+                </div>
+                <div class="info">
+                    <span>currunt position :</span>
+                    <input type="text" name="curr_pos" placeholder="Enter position">
+                </div>
+                <div class="info">
+                    <span>your github profile link :</span>
+                    <input type="text" name="github" placeholder="Github">
+                </div>
+                <div class="info">
+                    <span>your instagram profile link :</span>
+                    <input type="text" name="instagram" placeholder="instagram">
+                </div>
+                <div class="info">
+                    <span>your facebook profile link :</span>
+                    <input type="text" name="facebook" placeholder="facebook">
+                </div>
+                <div class="info">
+                    <span>your twitter profile link :</span>
+                    <input type="text" name="twitter" placeholder="twitter">
+                </div>
+                <div class="info">
+                    <span>your 10 education details :</span>
+                    <input type="text" name="10-th" placeholder="10-th">
+                </div>
+                <div class="info">
+                    <span>your 10 % :</span>
+                    <input type="number" name="10-th" placeholder="10-th">
+                </div>
+                <div class="info">
+                    <span>your 12 education details :</span>
+                    <input type="text" name="12-th" placeholder="12-th">
+                </div>
+                <div class="info">
+                    <span>your 12 % :</span>
+                    <input type="number" name="12-th" placeholder="12-th">
+                </div>
+                <div class="info">
+                    <span>your current location :</span>
+                    <input type="text" name="location" placeholder="location">
+                </div>
+                <button class="save-btn">save</button>
+                <div>
+        </form>
+    </div>
+</body>
+
+</html>

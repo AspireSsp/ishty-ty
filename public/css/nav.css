@@ -1,0 +1,66 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: mintcream;
+}
+#nav_main{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid  darkgrey;
+    background-color: #fff;
+    
+}
+#nav_main{
+    /* display: flex; */
+    /* margin: auto; */
+    /* align-items: center; */
+    justify-content: center;
+}
+.nav-page{
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+    /* justify-content: center; */
+}
+
+.nav-page-box1{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#logo{
+    height: 40px;
+    width: 80px;
+    background-image: url("../img/Ishty.png");
+    background-size: cover;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+#nav-page-search{
+    border-radius: 30px;
+    margin: 10px;
+
+}
+
+.nav-page-box2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+
+}
+
+.nav-items{
+    margin-top: 25px;
+    margin-left: 60px;
+
+}
+.nav-items a{
+    text-decoration: none;
+    color: #212529;
+}
+

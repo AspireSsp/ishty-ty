@@ -1,0 +1,56 @@
+.body{
+margin: 0;
+padding: 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.user__information{
+  margin: 10px;
+  padding: 10px;
+}
+.tranning{
+  height: 400px;
+  width: 50%;
+  border: 1px solid lightgray;
+}
+.tranning h2{
+  margin-left: 8px;
+}
+.works__trannings{
+  margin: 10px;
+}
+
+.pri-pro{
+  margin: 5px;
+}
+#pri_info{
+  display: flex;
+  flex-direction: row;
+}
+.pro1{
+  margin: 20px;
+}
+.pro1 img{
+  width: 200px;
+  height: 200px;
+}
+/* .comp__name */
+.comp__name button{
+  float: right;
+  margin-top: 0;
+
+}
+.experience_info{
+  margin: 0;
+  width: 50%;
+  border: 1px solid lightgray;
+  
+}
+.educaton_info{
+  margin: 0;
+  width: 50%;
+  border: 1px solid lightgray; 
+}

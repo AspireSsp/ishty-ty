@@ -1,0 +1,320 @@
+*body{
+    margin-top: 0;
+}
+.mess {
+    width: 75%;
+    height: 89vh;
+    border-radius: 5px;
+    margin: auto 0;
+    display: grid;
+    border: 1px solid darkblue;
+    grid-template-columns: 30% 72%;
+    /* position: fixed;
+    top: 90px;
+    left: 15%; */
+    /* left: 0; */
+    /* padding: 0; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.cont1 {
+    /* background-color: aqua; */
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    height: 89vh;
+    background-color: #fff;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    /* overflow: hidden; */
+    height: 140px;
+    /* margin: 4px; */
+
+    
+    /* border-bottom: 0.1px solid lightslategray; */
+}
+.chat-box :hover{
+    background-color: #cccccc;
+}
+
+.i {
+    margin-right: 10px;
+    margin-left: 5px;
+    /* margin-top: 2px; */
+    /* margin-bottom: 6px; */
+    width: 10%;
+
+}
+.i i{
+    font-size: 40px;
+    /* margin-bottom: 6px; */
+}
+#hed-mess{
+    margin-right: 0;
+    width: 112%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+#hed-mess h2{
+    margin-left: 25px;
+}
+
+.hspan {
+    /* margin-top: 5px; */
+    width: 90%;
+    border-bottom: 0.1px solid lightslategray;
+}
+
+.hspan p {
+    margin: 0px;
+    color: lightslategray;
+    width: auto;
+    padding: 0px;
+    /* border-bottom: 0.1px solid lightslategray; */
+
+}
+
+
+.cont2 {
+    /* background-color: blueviolet; */
+    grid-row: 1/ -1;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+/* ///     css  for chat page    */
+
+/* For better visibility of the example */
+body {
+    margin: 80px 200px;
+    /* background-color: #cccccc; */
+}
+
+/* Message box starts here */
+
+.msg-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    padding: 0;
+    border-bottom: 1px solid lightslategray;
+    background-color: #007bff;
+}
+
+.msg-header-img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+img {
+    size: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.active {
+    width: 420px;
+    margin: 10px;
+}
+
+.active h4 {
+    margin: 0;
+}
+
+.active h6 {
+    margin-top: 5px;
+}
+
+.header-icons {
+    margin: auto auto;
+}
+
+.header-icons i {
+    margin-left: 10px;
+}
+
+
+
+/* css for chat page */
+.chat-page {
+    padding: 0 0 50px 0;
+}
+
+.msg-inbox {
+    border: 1px solid #fff;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.chats {
+    padding: 30px 15px 0 25px;
+}
+
+.msg-page {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.received-chats-img {
+    display: inline-block;
+    width: 20px;
+    float: left;
+}
+
+.received-msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received-msg-inbox {
+    width: 57%;
+}
+
+.received-msg-inbox p {
+    background: #efefef none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+
+}
+
+.received-msg-inbox .time {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.outgoing-chats-msg .time {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin-left: 0;
+}
+
+
+.outgoing-chats {
+    overflow: hidden;
+    margin: 10px 20px;
+}
+
+.outgoing-chats-msg p {
+    background: #007bff none repeat scroll 0 0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.outgoing-chats-msg {
+    float: left;
+    width: 46%;
+    margin-left: 45%;
+}
+
+.outgoing-chats-img {
+    display: inline-block;
+    width: 20px;
+    float: right;
+}
+
+
+/* bootttom */
+
+.msg-bottom {
+    position: sticky;
+    bottom: 0;
+    height: 60px;
+    background-color: salmon;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottoms-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.bottoms-icons .bi {
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    width: 75% !important;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 10px;
+    
+
+}
+
+.form-cont {
+    border: none !important;
+    margin: 10px;
+    
+    padding-left: 10px;
+    height: 38px;
+    /* border-radius: 20px !important; */
+
+}
+
+.input-group-text {
+    background: transparent !important;
+    border: none !important;
+
+}
+/* .inp-text{
+    margin-top: 8px;
+} */
+.inp-text input{
+    border: none;
+    height:39px ;
+    width: 711px !important;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.input-group-append {
+    color: #007bff;
+    margin-left: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+    /* margin: auto; */
+
+}
+
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    border-radius: 20px;
+}

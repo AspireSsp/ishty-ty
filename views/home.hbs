@@ -1,0 +1,457 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+      {{>header}}
+    <!-- <h1>Hi sanjay</h1> -->  
+
+    <div class="body_main">
+      <div class="sidebar">
+        <div class="sidebar__top">
+          <img
+            src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29sb3IlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <br /><i class="bi bi-person-circle sidebar__topAvatar"></i>
+          <h2>{{user_fullname}} </h2>
+          <h4>{{user_email}} </h4>
+
+        </div>
+        <div class="sidebar__stats">
+          <div class="sidebar__stat">
+            <p>who viewed you</p>
+            <p class="siedbar__statNumber"> 2,302</p>
+          </div>
+          <div class="sidebar__stat">
+            <p>views in post</p>
+            <p class="siedbar__statNumber"> 2,452</p>
+          </div>
+
+        </div>
+        <div class="sidebar__bottom">
+          <p>Resent</p>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>reactjs</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>python</p>
+          </div><div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>containe</p>
+          </div><div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>AWS Cloud</p>
+          </div><div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>web devlopment</p>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- sidebar end -->
+
+      <!-- feed start -->
+      <div class="feed">
+        <div class="input__Container">
+          <div class="feed__input">
+            <i class="bi bi-pen-fill"></i>
+            <form>
+              <input type="text" placeholder="Start a post" />
+            </form>
+          </div>
+
+        </div>
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <a>
+              <i
+                style="color: rgba(71, 179, 241, 0.781);"
+                class="bi bi-card-image"
+              ></i>
+              Photo
+            </a>
+          </div>
+          <div class="inputOption">
+            <a>
+              <i
+                style="color: rgba(85, 241, 71, 0.781);"
+                class="bi bi-play-btn"
+              ></i>
+              Video
+            </a>
+          </div>
+          <div class="inputOption">
+            <a>
+              <i
+                style="color: rgba(241, 71, 176, 0.781);"
+                class="bi bi-calendar2-event"
+              ></i>
+              Event
+            </a>
+          </div>
+          <div class="inputOption">
+            <a>
+              <i
+                style="color: rgba(250, 0, 0, 0.781);"
+                class="bi bi-text-paragraph"
+              ></i>
+              Article
+            </a>
+          </div>
+        </div>
+        <!-- feed end -->
+        <!-- post Started -->
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+              <p>2d</p>
+            </div>
+            <div style="color: rgba(52, 52, 236, 0.842); margin-left: 50%;"><h5
+              >+ Follow</h5></div>
+          </div>
+          <div class="post__body">
+            <p>Hello, People… I hope you all are doing Awesome</p>
+
+            <p>
+              Today, 9th April, and this is my Day 8 of 50 Days Daily UI Design
+              Challenge. This is the 404 Error Landing Page.</p>
+
+            <p>Thanks for giving your Valuable Time. Your Feedbacks are Heartily
+              Welcome. Regards!</p>
+            <p style="color: blue;">#uxdesign #uidesign #userexperience
+              #userinterface #uxui #entrylevel #uxdesigner #figma #adobexd
+              #google #grateful #userexperience #userresearch #wireframe
+              #prototyping #internship #share #team #opportunities #people
+              #emphathize #define #ideate #prototype #test #productdesign
+              #productdesigner</p>
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacWs0RN-s7bW73ggMwxx_popGAAR8GyRn6oDgD47as-WQtU8RYQ7TGul_lEfgCfhA3yM&usqp=CAU"
+              alt=""
+              width="500px"
+              height="270px"
+            />
+            <span class="time"><i
+                style="color: rgb(43, 6, 255);"
+                class="bi bi-hand-thumbs-up-fill"
+              ></i></span>
+            <span>sanjay prajapati and 30 other</span>
+            <span style="margin-left: 40%;">7 commant</span>
+
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+              <p>2d</p>
+            </div>
+            <div style="color: rgba(52, 52, 236, 0.842); margin-left: 50%"><h5>+
+                Follow</h5></div>
+          </div>
+          <div class="post__body">
+            <p>
+              UI Screens Its a dribble screen remade as a part of my usual
+              practice to improve my UI.</p>
+            <p> Let me know your thoughts in comment section</p>
+
+            <p style="color: rgba(94, 94, 247, 0.911);">
+              #uidesign #uxdesign #uiuxdesign #designinspiration #dribbble #ui
+              #ux
+            </p>
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C5622AQHqEL50LYvmbA/feedshare-image-high-res/0/1649690323054?e=2147483647&v=beta&t=ZFoU_d9jKKhKrK9fZHbgp1_-fhhvIAReUPbeZqOJtaA"
+              alt=""
+              width="500px"
+              height="270px"
+            />
+            <span class="time"><i
+                style="color: rgb(43, 6, 255);"
+                class="bi bi-hand-thumbs-up"
+              >Rahul Rajput and 16 other</i></span>
+            <span style="margin-left: 40%;">7 commant</span>
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+              <p>1W</p>
+            </div>
+            <div style="color: rgba(52, 52, 236, 0.842); margin-left: 50%"><h3>+
+                Follow</h3></div>
+          </div>
+          <div class="post__body">
+            <p>Message Hare</p>
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+            </div>
+          </div>
+          <div class="post__body">
+            <p>Message Hare</p>
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+            </div>
+          </div>
+          <div class="post__body">
+            <p>Message Hare</p>
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__header">
+            <i class="bi bi-person-circle sidebar__topAvatar"></i>
+            <div class="post__info">
+              <h2>Sanjay prajapati</h2>
+              <p>SDE to @Google</p>
+            </div>
+          </div>
+          <div class="post__body">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacWs0RN-s7bW73ggMwxx_popGAAR8GyRn6oDgD47as-WQtU8RYQ7TGul_lEfgCfhA3yM&usqp=CAU"
+              alt=""
+              width="500px"
+              height="270px"
+            />
+            <span class="time"><i
+                style="color: rgb(43, 6, 255);"
+                class="bi bi-hand-thumbs-up"
+              >sanjay prajapati and 30 other</i></span>
+          </div>
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-hand-thumbs-up"></i>
+              <P>Like</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-chat-left-text"></i>
+              <P>Comment</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-arrow-return-right"></i>
+              <P>Share</P>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray;" class="bi bi-send"></i>
+              <P>Like</P>
+            </div>
+          </div>
+        </div>
+
+        <!-- post end -->
+      </div>
+      <!-- feed end -->
+      <!-- Widgets Start -->
+      <div class="widgets">
+        <div style="display: flex;" class="widgets__header">
+          <h2>Ishti's Top News</h2>
+          <i
+            style="margin-top: 25px; margin-left: 15px;"
+            class="bi bi-info-circle"
+          ></i>
+        </div>
+        <div class="news">
+          <div>
+            <img
+              src="https://dt-cdn.net/wp-content/uploads/2021/07/13429_ILL_DevOpsLoop.png"
+              alt=""
+              width="220px"
+              height="100px"
+            />
+          </div>
+          <h2>How Devops is growing?</h2>
+          <p>DevOps practices work smarter and faster, and deliver better
+            quality to their customers.</p>
+          <h5 style="color: rgb(163, 163, 163);">2d ago</h5>
+        </div>
+        <hr />
+        <div class="news">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBTkglKBmnWaNBCJ6s1zq0btwY47Ogj5OV0YWWL2eU-RBBBNvPWCu5mFCxCXdIWZ9jQ2A&usqp=CAU"
+              alt=""
+              width="220px"
+              height="100px"
+            />
+          </div>
+          <h2>What is Cloud Computing?</h2>
+          <p>allows organizations to scale, maintain flexibility, and focus
+            their efforts on business operations.</p>
+
+          <h5 style="color: rgb(163, 163, 163);">5h ago</h5>
+        </div>
+        <hr />
+        <div class="news">
+          <div>
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/612919a086fad616bd00f4c6/Artificial-intelligence-and-future-concept/960x0.jpg?fit=bounds&format=jpg&width=960"
+              alt=""
+              width="220px"
+              height="100px"
+            />
+          </div>
+          <h2>Power of Artificial Intelligence?</h2>
+          <p>Artificial Intelligence enhances the speed, precision and
+            effectiveness of human efforts.</p>
+          <h5 style="color: rgb(163, 163, 163);">20h ago</h5>
+
+        </div>
+        <hr />
+        <div class="news">
+          <div>
+            <img
+              src="https://www.spec-india.com/wp-content/uploads/2020/11/What-is-full-stack-developer.png"
+              alt=""
+              width="220px"
+              height="100px"
+            />
+          </div>
+          <h2>Who is Full Stack Devlopment?</h2>
+
+          <p>someone who works with the Back End — or server side — of the
+            application as well as the Front End, or client side.</p>
+
+          <h5 style="color: rgb(163, 163, 163);">5d ago</h5>
+
+        </div>
+
+      </div>
+
+      <!-- Widgets end -->
+    </div>
+    <!-- main body end -->
+
+  </body>
+</html>
