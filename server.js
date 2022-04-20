@@ -3,7 +3,8 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const port = process.env.PORT || 3000;
-require("./src/db/connection");
+// require("./src/db/connection");
+
 const Register = require("./src/models/register");
 
 const partialsPath = path.join(__dirname, "../ishty/views/partials");
